@@ -15,3 +15,47 @@ Mobil   0 - 539px
 Tablet  540px - 959px (čti jako 540px a víc)
 PC      960px a víc
 */
+
+
+
+h1 {
+	text-align: center;
+	margin: 0;
+}
+
+.clen-tymu {
+	border: 1px solid grey;
+	border-radius: 20px;
+	text-align: center;
+	margin-top: 20px;
+	padding: 20px;
+	
+}
+
+.clen-tymu img {
+	border-radius: 50%;
+	margin-right: 20px;
+}
+
+
+@media screen and (min-width: 540px) {
+	.cely-tym {
+		display: flex;
+		flex-wrap: wrap; 		
+	}
+
+	.clen-tymu {
+		display: flex;
+		text-align: left;
+		flex: 1 1 calc((100% - 30px) / 2);
+		margin: 10px 10px;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	.clen-tymu {
+		flex: 1 1 calc((100% - 80px) / 4);
+	}
+}
+
+
