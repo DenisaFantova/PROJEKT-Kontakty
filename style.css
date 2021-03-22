@@ -24,12 +24,13 @@ h1 {
 }
 
 .clen-tymu {
-	border: 1px solid grey;
+	border: 1px solid silver;
 	border-radius: 20px;
 	text-align: center;
 	margin-top: 20px;
 	padding: 20px;
 	width: 100%;
+	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
 }
 
 .foto img {
