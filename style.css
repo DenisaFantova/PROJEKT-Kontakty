@@ -29,33 +29,59 @@ h1 {
 	text-align: center;
 	margin-top: 20px;
 	padding: 20px;
-	
+	width: 100%;
 }
 
-.clen-tymu img {
+.foto img {
 	border-radius: 50%;
 	margin-right: 20px;
 }
 
-
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 600px) {
 	.cely-tym {
 		display: flex;
-		flex-wrap: wrap; 		
+		flex-wrap: wrap; 
+		justify-content: space-evenly;
+
 	}
 
 	.clen-tymu {
 		display: flex;
+		width: calc(50% - 30px);
+		flex: 1 1 ((100% - 30px) / 2);
+	}
+
+	.popis {
 		text-align: left;
-		flex: 1 1 calc((100% - 30px) / 2);
-		margin: 10px 10px;
+				
 	}
+
+	.foto img {
+		width: 100%;
+		width: 85px;
+	}
+
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1250px) {
 	.clen-tymu {
-		flex: 1 1 calc((100% - 80px) / 4);
+		width: calc(25% - 30px);
+		flex: 1 1 ((100% - 30px) / 4);
 	}
-}
 
+	.clen-tymu {
+		display: block;		
+	}
+
+	.popis {
+		text-align: center;
+		margin-left: 0;
+	}
+
+	.foto img {
+		margin: 0;
+		width: 128px;
+	}
+	
+}
 
